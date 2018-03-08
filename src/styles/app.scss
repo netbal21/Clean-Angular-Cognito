@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/bootstrap";
+@import "spinner";
+@import "utils";
+@import "rtl";
+@import "responsive";
+body{
+background-color: ghostwhite;
+}
+.smallDiv{
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #17a2b8;
+    box-shadow: 6px 13px 27px 0px #17a2b8;
+}

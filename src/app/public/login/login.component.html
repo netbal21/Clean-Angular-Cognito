@@ -1,0 +1,39 @@
+<div class="login-page ">
+    <div class="row justify-content-md-center">
+        <div class="col-md-4 " style="color: #000;
+     max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    margin-top: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #17a2b8;
+    box-shadow: 6px 13px 27px 0px #17a2b8;">
+            <img src="assets/images/Spiderman.jpg" width="150px" />
+            <br/>
+            <img src="assets/images/SymbioticsLogo.png" width="300px" />
+            <h3 style="color: #1160ab; ">Base Project</h3>
+
+            <form role="form">
+                <div class="form-content">
+                    <div *ngIf="errorMessage!=null" class="alert alert-danger">
+                        {{ errorMessage }}
+                    </div>
+                    <div class="form-group">
+                        <input placeholder="username" id="signupEmail" required type="email" maxlength="100" class="form-control" [(ngModel)]="email"
+                               [ngModelOptions]="{standalone: true}">
+                    </div>
+
+                    <div class="form-group">
+                        <input placeholder="password" id="signupPassword" required type="password" maxlength="25" class="form-control"
+                               length="40" [(ngModel)]="password" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <a class="btn btn-info " style="color: #fff;" (click)="onLogin()"> Log in </a>
+                &nbsp;
+                <a class="btn btn-info " [routerLink]="['/register']">Register</a>
+                <a class="btn btn-info " [routerLink]="['/forgot']">Forgot Password</a>
+            </form>
+        </div>
+    </div>
+</div>
